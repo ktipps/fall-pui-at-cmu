@@ -2,10 +2,6 @@ body, html{
     height: 100%
 }
 
-#testcase{
- font-family: 'Pacifico', cursive;
-}
-
 .pageheader{
     border-bottom: 1px solid black;
     background: #E7FAFE; 
@@ -38,7 +34,7 @@ body, html{
 }
 
 .bannerimage{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Banner\ Image\ Cover.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("");
     height:100%;
     background-position: center; 
     background-repeat: no-repeat;
@@ -64,11 +60,43 @@ body, html{
     background-color: #E7FAFE;
     border: .25px solid black; 
     outline: 4px solid white;
-
 }
 
 .browsebutton:hover{
     background-color:white;
+}
+
+#servicecontainer{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-evenly;
+}
+
+.servicebox{
+    margin-top: 100px;
+    padding: 60px;
+    background-color: white; 
+    border: .25px double black; 
+    outline: 4px solid #E7FAFE;
+    text-align: center;
+    
+}
+
+#servicetitle{
+    font-family: 'Pacifico', cursive;
+    font-size: 45px;
+    padding: 10px; 
+}
+
+.generalbutton{
+    margin-top: 20px;
+    padding: 5px 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: bold;
+    color: black;
+    background-color: #E7FAFE;
+    border: .25px solid black; 
+    outline: 4px solid white;
 }
 
 .pagefooter{
