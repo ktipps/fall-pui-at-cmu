@@ -1,4 +1,31 @@
 #testcase{
  font-family: 'Pacifico', cursive;
 }
-    
+
+.pageheader{
+    border-bottom: 1px solid black;
+    background: #E7FAFE; 
+    padding: 2%;
+}
+
+#shoppingcart{
+}
+
+.navitems{
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color:black;
+    -webkit-text-stroke-fill-color: white;
+
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-style: bold;
+}
+.pagefooter{
+    border-top: 1px solid black;
+    background: #E7FAFE; 
+    padding: 2%;
+}

@@ -12,20 +12,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <p id="testcase">test</p>
+
+    <header class="pageheader">
+        <img src="BunBunLogo.png" alt="A circular logo saying Bun Bun Bake Shop with a little brown bun with a heart in the middle.">
+        
+<!--Shopping Cart-->
+        <div id="shoppingcart">
+            <p>Cart</p>
+            <a href="#">
+                <span class="glyphicon glyphicon-shopping-cart"></span>
+            </a>
+        </div>
 
     <!--Hamburger Menu Navigation-->
-    <nav id="hamburgernav">
-        <label for="hamburgericon">&#9776</label>
-        <input type="checkbox" id="hamburgericon">
-        
-    <div id="hamburgeritems">
-        <a href="index.html">Home</a>
-        <a href="product-browsing.html">Browse Flavors</a>
-    </div>
-    </nav>
+        <nav id="hamburgernav">
+            <label for="hamburgericon">&#9776</label>
+            <input type="checkbox" id="hamburgericon">
+            <div id="hamburgeritems">
+                <a href="index.html" class="navitems">Home</a>
+                <a href="product-browsing.html" class="navitems">Browse Flavors</a>
+            </div>
+        </nav>  
+    </header>
+    
+
+    <footer class="pagefooter"></footer>
     
 </body>
 </html>
