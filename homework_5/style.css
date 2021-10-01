@@ -1,23 +1,23 @@
-body, html{
+body, html { 
     height: 100%
 }
 
-.pageheader{
+.pageheader {
     border-bottom: 1px solid black;
     background: #E7FAFE; 
     padding: 2%;
 }
 
-#shoppingcart{
+#shoppingcart {
     margin-left: auto;
     margin-right: 0;
 }
 
-#carttext{
+#carttext {
     font-family: 'Open Sans', sans-serif; 
     color: black;
 }
-.navitems{
+.navitems {
     font-family: 'Pacifico', cursive;
     font-size: 30px;
     -webkit-text-stroke-width: 2px;
@@ -26,22 +26,22 @@ body, html{
 
 }
 
-.headerlogo{
+.headerlogo {
     display: block; 
     margin-left: auto;
     margin-right: auto;
-    width: 35%;
+    width: 15%;
 }
 
-.bannerimage{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("");
+.bannerimage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Images/banner_image.png");
     height:100%;
     background-position: center; 
     background-repeat: no-repeat;
     background-size: cover; 
     position: relative;
 }
-.bannertext{
+.bannertext {
     text-align: center; 
     position: absolute; 
     top: 50%; 
@@ -51,7 +51,7 @@ body, html{
     color:white; 
 }
 
-.browsebutton{
+.browsebutton {
     margin-top: 12%;
     padding: 5px 12px;
     font-family: 'Open Sans', sans-serif;
@@ -62,46 +62,59 @@ body, html{
     outline: 4px solid white;
 }
 
-.browsebutton:hover{
+.browsebutton:hover {
     background-color:white;
+    outline: 4px solid #E7FAFE;
 }
 
-#servicecontainer{
+#servicecontainer {
     display: flex; 
     flex-direction: row; 
     justify-content: space-evenly;
 }
 
-.servicebox{
+.servicebox {
     margin-top: 100px;
     padding: 60px;
     background-color: white; 
-    border: .25px double black; 
-    outline: 4px solid #E7FAFE;
+    border: 2px solid #7D8789; 
+    box-shadow: 0px 0px 0px 12px#7D8789;
+    outline: 10px solid #E7FAFE;
     text-align: center;
-    
 }
 
-#servicetitle{
+#servicetitle {
     font-family: 'Pacifico', cursive;
     font-size: 45px;
     padding: 10px; 
 }
 
-.generalbutton{
+#servicelogo{
+    width: 30%;
+}
+
+.generalbutton {
     margin-top: 20px;
     padding: 5px 12px;
     font-family: 'Open Sans', sans-serif;
     font-style: bold;
     color: black;
     background-color: #E7FAFE;
-    border: .25px solid black; 
-    outline: 4px solid white;
+    border: 1px solid black; 
+    box-shadow: 0px 0px 0px 4px black;
+    outline: 3px solid white;
 }
 
-.pagefooter{
+.generalbutton:hover {
+    background-color:white;
+    border: 1px solid black; 
+    box-shadow: 0px 0px 0px 4px black;
+    outline: 3px solid #E7FAFE;
+
+}
+.pagefooter {
+    margin-top: 100px;
     border-top: 1px solid black;
     background: #E7FAFE; 
-    padding: 14px 28px; 
-    cursor: pointer; 
+    padding: 40px 100px; 
 }
