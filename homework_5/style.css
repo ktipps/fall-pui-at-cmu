@@ -47,12 +47,22 @@ body, html {
     top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
-    font-family: 'Pacifico', cursive;
     color:white; 
+    font-size: 25px;
+}
+
+#bunsouttext{
+    font-size: 85px;
+    padding-bottom: 5%;
+    font-family: 'Pacifico', cursive;
+}
+
+#favoritesback{
+    font-family: 'Open Sans', sans-serif;
 }
 
 .browsebutton {
-    margin-top: 12%;
+    margin-top: 7%;
     padding: 5px 12px;
     font-family: 'Open Sans', sans-serif;
     font-style: bold;
