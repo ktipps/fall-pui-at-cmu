@@ -8,29 +8,41 @@ body, html {
     padding: 2%;
 }
 
-#shoppingcart {
-    margin-left: auto;
-    margin-right: 0;
-}
-
-#carttext {
-    font-family: 'Open Sans', sans-serif; 
-    color: black;
-}
-.navitems {
-    font-family: 'Pacifico', cursive;
-    font-size: 30px;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color:black;
-    -webkit-text-stroke-fill-color: white;
-
-}
-
 .headerlogo {
     display: block; 
     margin-left: auto;
     margin-right: auto;
     width: 15%;
+}
+
+#topbarnavigation{
+    margin: 0; 
+    padding: 0; 
+    text-align: center;
+    font-family: 'Open Sans', 'sans-serif';
+    color: black;
+    /*-webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color:black;
+    -webkit-text-stroke-fill-color: white;*/
+}
+
+li{
+    display: inline-block; 
+    margin-left: 60px;
+    margin-top: 2%;
+    font-size: 20px;
+}
+
+#shoppingcart {
+    display: inline;
+    float: right;
+    
+}
+
+#carttext {
+    font-family: 'Open Sans', sans-serif; 
+    color: black;
+    font-size: 20;
 }
 
 .bannerimage {
@@ -41,6 +53,7 @@ body, html {
     background-size: cover; 
     position: relative;
 }
+
 .bannertext {
     text-align: center; 
     position: absolute; 

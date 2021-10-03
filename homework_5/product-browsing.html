@@ -1,12 +1,78 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bun Bun Bakeshop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 <body>
+<!--Page Header-->
+    <header class="pageheader">
+        <img class="headerlogo" src="Images/bun_bun_logo.png" alt="A circular logo saying Bun Bun Bake Shop with a little brown bun with a heart in the middle.">
+
+        <!--Navigation Menu-->
+        <ul id="topbarnavigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="product-browsing.html">Browse Flavors</a></li>
+            <li><a href="">Catering</a></li>
+            <li><a href="">Same-day Pick-up</a></li>
+            <li>
+                <!--Shopping Cart-->
+                <div id="shoppingcart">
+                    <a href="#">
+                        <span id="carttext">CART</span>
+                        <span class="glyphicon glyphicon-shopping-cart"></span>
+                    </a>
+                </div>
+            </li>
+        </ul>
+</header>
+<!--Banner Image-->
+    <div class="bannerimage">
+        <div class="bannertext">
+            <h1 id="bunsouttext">Buns out, Funs out</h1>
+            <p id="favoritesback">Your favorites are back</p>
+            <button class="browsebutton">Browse Flavors</button>
+        </div>
+    </div>
+
+<!--Service Boxes-->
+    <div id="servicecontainer">
+        <div class="servicebox">
+            <img id="servicelogo" src="images/birthday_cake_icon.png" alt="a birthday cake logo in icy blue">
+            <h3 id="servicetitle">Catering</h3>
+            <p class="servicetext">Weddings, parties, corporate events. <br>We do it all.</p>
+            <button class="generalbutton">Learn More</button>
+        </div>
+        <div class="servicebox">
+            <img id="servicelogo" src="images/about_us_logo.png" alt="a whisk in an icy blue color">
+            <h3 id="servicetitle">About <br> Us</h3>
+            <p class="servicetext">Learn about how we became Pittsburgh’s best bun shop.</p>
+            <button class="generalbutton">Learn More</button>
+        </div>
+        <div class="servicebox">
+            <img id="servicelogo" src="Images/same_day_pick_up_logo.png" alt="a bun logo in icy blue">
+            <h3 id="servicetitle">Same-Day <br> Pick-Up</h3>
+            <p class="servicetext">No need to wait.<br>Order online and pick up that day.</p>
+            <button class="generalbutton">Learn More</button>
+        </div>
+    </div>
+
+<!--Footer-->
+<footer class="pagefooter"></footer>
     
 </body>
 </html>
+

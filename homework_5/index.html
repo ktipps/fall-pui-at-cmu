@@ -17,34 +17,33 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-
+<!--Page Header-->
     <header class="pageheader">
         <img class="headerlogo" src="Images/bun_bun_logo.png" alt="A circular logo saying Bun Bun Bake Shop with a little brown bun with a heart in the middle.">
 
-<!--Shopping Cart-->
-        <div id="shoppingcart">
-            <a href="#">
-                <span id="carttext">Cart</span>
-                <span class="glyphicon glyphicon-shopping-cart"></span>
-            </a>
-        </div>
-
-<!--Hamburger Menu Navigation-->
-        <nav id="hamburgernav">
-            <label for="hamburgericon">&#9776</label>
-            <input type="checkbox" id="hamburgericon">
-            <div id="hamburgeritems">
-                <a href="index.html" class="navitems">Home</a>
-                <a href="product-browsing.html" class="navitems">Browse Flavors</a>
-            </div>
-        </nav>  
-    </header>
-    
+        <!--Navigation Menu-->
+        <ul id="topbarnavigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="product-browsing.html">Browse Flavors</a></li>
+            <li><a href="">Catering</a></li>
+            <li><a href="">Same-day Pick-up</a></li>
+            <li>
+                <!--Shopping Cart-->
+                <div id="shoppingcart">
+                    <a href="#">
+                        <span id="carttext">CART</span>
+                        <span class="glyphicon glyphicon-shopping-cart"></span>
+                    </a>
+                </div>
+            </li>
+        </ul>
+</header>
 <!--Banner Image-->
     <div class="bannerimage">
         <div class="bannertext">
             <h1 id="bunsouttext">Buns out, Funs out</h1>
-            <p>Your favorites are back</p>
+            <p id="favoritesback">Your favorites are back</p>
             <button class="browsebutton">Browse Flavors</button>
         </div>
     </div>
@@ -71,6 +70,7 @@
         </div>
     </div>
 
+<!--Footer-->
 <footer class="pagefooter"></footer>
     
 </body>
