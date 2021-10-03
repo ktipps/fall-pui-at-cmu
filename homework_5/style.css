@@ -141,3 +141,33 @@ li{
     background: #E7FAFE; 
     padding: 40px 100px; 
 }
+
+/*citation for breadcrumbs: https://www.w3schools.com/howto/howto_css_breadcrumbs.asp */
+
+ul.breadcrumbs{
+    list-style: none; 
+}
+
+ul.breadcrumbs li+li:before {
+    content: "/";
+    padding-right: 20px;
+
+}
+
+ul.breadcrumbs li a{
+    display: inline; 
+    font-size: 18px;
+    color: black;
+}
+
+ul.breadcrumbs li a:hover{
+    text-decoration: underline;
+}
+
+#onbrowseflavors{
+    text-decoration: underline;
+}
+
+#homebreadcrumb{
+    padding-right: -2%;
+}
