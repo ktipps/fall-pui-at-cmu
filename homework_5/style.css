@@ -15,7 +15,7 @@ body, html {
     width: 15%;
 }
 
-#topbarnavigation{
+#topbarnavigation {
     margin: 0; 
     padding: 0; 
     text-align: center;
@@ -26,7 +26,7 @@ body, html {
     -webkit-text-stroke-fill-color: white;*/
 }
 
-li{
+li {
     display: inline-block; 
     margin-left: 60px;
     margin-top: 2%;
@@ -64,13 +64,13 @@ li{
     font-size: 25px;
 }
 
-#bunsouttext{
+#bunsouttext {
     font-size: 85px;
     padding-bottom: 5%;
     font-family: 'Pacifico', cursive;
 }
 
-#favoritesback{
+#favoritesback {
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -112,7 +112,7 @@ li{
     padding: 10px; 
 }
 
-#servicelogo{
+#servicelogo {
     width: 30%;
 }
 
@@ -135,44 +135,42 @@ li{
     outline: 3px solid #E7FAFE;
 
 }
-.pagefooter {
+#pagefooter {
     margin-top: 100px;
     border-top: 1px solid black;
     background: #E7FAFE; 
     padding: 40px 100px; 
 }
 
+/* Product Browsing Page */
+
+
 /*citation for breadcrumbs: https://www.w3schools.com/howto/howto_css_breadcrumbs.asp */
 
-ul.breadcrumbs{
-    list-style: none; 
+ul.breadcrumbs {
+    list-style: none;
+    padding-top: 40px;
 }
 
-ul.breadcrumbs li+li:before {
-    content: "/";
-    padding-right: 20px;
-
+ul.breadcrumbs li {
+    display: inline;
+    color: black;
 }
 
-ul.breadcrumbs li a{
+
+ul.breadcrumbs li a {
     display: inline; 
     font-size: 18px;
     color: black;
 }
 
-ul.breadcrumbs li a:hover{
+ul.breadcrumbs li a:hover {
     text-decoration: underline;
 }
 
-#onbrowseflavors{
+#onbrowseflavors {
     text-decoration: underline;
 }
-
-#homebreadcrumb{
-    padding-right: -2%;
-}
-
-/* Product Browsing Page */
 
 .FlavorsHeader {
     margin-left: 100px;
@@ -324,4 +322,11 @@ ul.breadcrumbs li a:hover{
     margin-top: 728px;
     margin-bottom: 200px;
     font-size: 16px;
+}
+
+#ProductBrowsingPageFooter{
+    margin-top: 875px;
+    border-top: 1px solid black;
+    background: #E7FAFE; 
+    padding: 40px 100px; 
 }
