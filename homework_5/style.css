@@ -199,12 +199,12 @@ ul.breadcrumbs li a:hover {
     font-size: 45px;
 }
 
-#ProductPhoto{
+#ProductPhoto {
     width: 297px; 
     height: 297px;
 }
 
-#ProductBox1{
+#ProductBox1 {
     position: absolute; 
     margin-top: -1px;
     margin-left: 100px;
@@ -225,7 +225,7 @@ ul.breadcrumbs li a:hover {
     font-size: 16px;
 }
 
-#ProductBox2{
+#ProductBox2 {
     position: absolute; 
     margin-left: 480px;
     margin-top: -3px;
@@ -286,7 +286,7 @@ ul.breadcrumbs li a:hover {
     text-align: center;
 }
 
-#CarmelPecanContainer{
+#CarmelPecanContainer {
     position: absolute; 
     margin-left: 190px;
     margin-top: 728px;
@@ -294,7 +294,7 @@ ul.breadcrumbs li a:hover {
     font-size: 16px;
 }
 
-#ProductBox5{
+#ProductBox5 {
     position: absolute; 
     margin-left: 480px;
     margin-top: 400px;
@@ -308,7 +308,7 @@ ul.breadcrumbs li a:hover {
     text-align: center;
 }
 
-#WalnutContainer{
+#WalnutContainer {
     position: absolute; 
     margin-left: 600px;
     margin-top: 728px;
@@ -338,24 +338,10 @@ ul.breadcrumbs li a:hover {
     font-size: 16px;
 }
 
-#ProductBrowsingPageFooter{
+#ProductBrowsingPageFooter {
     margin-top: 875px;
     border-top: 1px solid black;
     background: #E7FAFE; 
     padding: 40px 100px; 
 }
 
-/*Product Detail Page */
-#overlay {
-    position: fixed; /* Sit on top of the page content */
-    display: none; /* Hidden by default */
-    width: 100%; /* Full width (cover the whole page) */
-    height: 100%; /* Full height (cover the whole page) */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
-    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-    cursor: pointer; /* Add a pointer on hover */
-  }
