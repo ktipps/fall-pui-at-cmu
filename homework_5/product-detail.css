@@ -6,7 +6,237 @@
     left: 0; 
     right: 0; 
     bottom: 0; 
-    background-color: rgba(0,0,0,0.5); 
+    background-color: rgba(0,0,0,0.7); 
     z-index: 2;
 
+}
+
+/* Product Browsing Page Background */
+.pageheader {
+    border-bottom: 1px solid black;
+    background: #E7FAFE; 
+    padding: 2%;
+}
+
+.headerlogo {
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+}
+
+#topbarnavigation {
+    margin: 0; 
+    padding: 0; 
+    text-align: center;
+    font-family: 'Open Sans', 'sans-serif';
+    color: black;
+    /*-webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color:black;
+    -webkit-text-stroke-fill-color: white;*/
+}
+
+li {
+    display: inline-block; 
+    margin-left: 60px;
+    margin-top: 2%;
+    font-size: 20px;
+}
+
+#shoppingcart {
+    display: inline;
+    float: right;
+    
+}
+
+#carttext {
+    font-family: 'Open Sans', sans-serif; 
+    color: black;
+    font-size: 20;
+}
+
+/*citation for breadcrumbs: https://www.w3schools.com/howto/howto_css_breadcrumbs.asp */
+
+ul.breadcrumbs {
+    list-style: none;
+    padding-top: 40px;
+}
+
+ul.breadcrumbs li {
+    display: inline;
+    color: black;
+}
+
+
+ul.breadcrumbs li a {
+    display: inline; 
+    font-size: 18px;
+    color: black;
+}
+
+ul.breadcrumbs li a:hover {
+    text-decoration: underline;
+}
+
+#onbrowseflavors {
+    text-decoration: underline;
+}
+
+.FlavorsHeader {
+    margin-left: 100px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color:black;
+    -webkit-text-stroke-fill-color: white;
+    color: white;
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 4px;
+    font-size: 45px;
+}
+
+#ProductPhoto {
+    width: 297px; 
+    height: 297px;
+}
+
+#ProductBox1 {
+    position: absolute; 
+    margin-top: -1px;
+    margin-left: 100px;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    background-color: white; 
+    border: 2px solid #7D8789; 
+    box-shadow: 0px 0px 0px 12px#7D8789;
+    outline: 10px solid #E7FAFE;
+    text-align: center;
+}
+
+#PumpkinSpiceTextContainer {
+    position: absolute; 
+    margin-left: 155px;
+    margin-top: 340px;
+    font-size: 16px;
+}
+
+#ProductBox2 {
+    position: absolute; 
+    margin-left: 480px;
+    margin-top: -3px;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    background-color: white; 
+    border: 2px solid #7D8789; 
+    box-shadow: 0px 0px 0px 12px#7D8789;
+    outline: 10px solid #E7FAFE;
+    text-align: center;
+}
+
+#OriginalContainer {
+    position: absolute; 
+    margin-left: 590px;
+    margin-top: 340px;
+    font-size: 16px;
+}
+
+#ProductBox3 {
+    position: absolute;
+    margin-left: 860px;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    background-color: white; 
+    border: 2px solid #7D8789; 
+    box-shadow: 0px 0px 0px 12px#7D8789;
+    outline: 10px solid #E7FAFE;
+    text-align: center;
+}
+
+#GFProductPhoto {
+    width: 297px; 
+    height: 325px;
+}
+
+#GlutenFreeContainer {
+    position: absolute; 
+    margin-left: 943px;
+    margin-top: 340px;
+    font-size: 16px;
+}
+
+
+#ProductBox4 {
+    position: absolute; 
+    margin-top: 400px;
+    margin-left: 100px;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    background-color: white; 
+    border: 2px solid #7D8789; 
+    box-shadow: 0px 0px 0px 12px#7D8789;
+    outline: 10px solid #E7FAFE;
+    text-align: center;
+}
+
+#CarmelPecanContainer {
+    position: absolute; 
+    margin-left: 190px;
+    margin-top: 728px;
+    margin-bottom: 200px;
+    font-size: 16px;
+}
+
+#ProductBox5 {
+    position: absolute; 
+    margin-left: 480px;
+    margin-top: 400px;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    background-color: white; 
+    border: 2px solid #7D8789; 
+    box-shadow: 0px 0px 0px 12px#7D8789;
+    outline: 10px solid #E7FAFE;
+    text-align: center;
+}
+
+#WalnutContainer {
+    position: absolute; 
+    margin-left: 600px;
+    margin-top: 728px;
+    margin-bottom: 200px;
+    font-size: 16px;
+}
+
+#ProductBox6 {
+    position: absolute;
+    margin-left: 860px;
+    margin-top: 400px;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    background-color: white; 
+    border: 2px solid #7D8789; 
+    box-shadow: 0px 0px 0px 12px#7D8789;
+    outline: 10px solid #E7FAFE;
+    text-align: center; 
+}
+
+#BlackberryContainer {
+    position: absolute; 
+    margin-left: 960px;
+    margin-top: 728px;
+    margin-bottom: 200px;
+    font-size: 16px;
+}
+
+#ProductBrowsingPageFooter {
+    margin-top: 875px;
+    border-top: 1px solid black;
+    background: #E7FAFE; 
+    padding: 40px 100px; 
 }
