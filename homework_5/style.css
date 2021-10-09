@@ -348,22 +348,17 @@ ul.Breadcrumbs li a:hover {
 /* About Us Page */
 
 #AboutUsContext {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
     width: 50%;
     height: 50%;
     margin-right: auto; 
-    margin-left: auto;
+    margin-left: 95px;
     margin-bottom: 50%;
     margin-top: 10px;
 }
 
-#PictureSide {
-    order: 1;
-}
 #AboutUsBio {
+    position: absolute; 
+    margin-left: 500px;
     font-family: "Open-sans", sans-serif;
     text-align: left;
 }
@@ -371,4 +366,13 @@ ul.Breadcrumbs li a:hover {
 #OwnerSignature { 
     font-family: 'Pacifico';
     font-size: 36px;
+    margin-left: 500px;
+    margin-top: -250px;
+}
+
+#PageAboutUsFoot {
+    margin-top: -700px;
+    border-top: 1px solid black;
+    background: #E7FAFE; 
+    padding: 40px 100px; 
 }
