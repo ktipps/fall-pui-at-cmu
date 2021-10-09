@@ -78,6 +78,11 @@
     padding: none;
 }
 
+#ExitLogo {
+    position: absolute; 
+    margin-left: 735px;
+}
+
 /* Product Browsing Page Background */
 .pageheader {
     border-bottom: 1px solid black;

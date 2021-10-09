@@ -2,20 +2,6 @@ body, html {
     height: 100%
 }
 
-#overlay {
-    position: fixed; /* Sit on top of the page content */
-    display: none; /* Hidden by default */
-    width: 100%; /* Full width (cover the whole page) */
-    height: 100%; /* Full height (cover the whole page) */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
-    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-    cursor: pointer; /* Add a pointer on hover */
-  }
-
 .pageheader {
     border-bottom: 1px solid black;
     background: #E7FAFE; 
@@ -35,16 +21,20 @@ body, html {
     text-align: center;
     font-family: 'Open Sans', 'sans-serif';
     color: black;
-    /*-webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color:black;
-    -webkit-text-stroke-fill-color: white;*/
 }
+
+a {
+    color: black;
+}
+
+
 
 li {
     display: inline-block; 
     margin-left: 60px;
     margin-top: 2%;
     font-size: 20px;
+    color: black;
 }
 
 #shoppingcart {
