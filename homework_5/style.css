@@ -345,3 +345,30 @@ ul.Breadcrumbs li a:hover {
     padding: 40px 100px; 
 }
 
+/* About Us Page */
+
+#AboutUsContext {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+    height: 50%;
+    margin-right: auto; 
+    margin-left: auto;
+    margin-bottom: 50%;
+    margin-top: 10px;
+}
+
+#PictureSide {
+    order: 1;
+}
+#AboutUsBio {
+    font-family: "Open-sans", sans-serif;
+    text-align: left;
+}
+
+#OwnerSignature { 
+    font-family: 'Pacifico';
+    font-size: 36px;
+}
