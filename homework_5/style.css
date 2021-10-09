@@ -117,13 +117,13 @@ li {
     text-align: center;
 }
 
-#ServiceTitle {
+.ServiceTitle {
     font-family: 'Pacifico', cursive;
     font-size: 45px;
     padding: 10px; 
 }
 
-#ServiceLogo {
+.ServiceLogo {
     width: 30%;
 }
 
