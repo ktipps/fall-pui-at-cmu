@@ -37,7 +37,7 @@
     margin-top: 30px;
 }
 
-#OptionsBox {
+.OptionsBox {
     border: 1px solid black;
     margin-bottom: 25px;
     padding-left: 10px;
@@ -168,7 +168,7 @@ ul.breadcrumbs li a:hover {
     font-size: 45px;
 }
 
-#ProductPhoto {
+.ProductPhoto {
     width: 297px; 
     height: 297px;
 }

@@ -198,7 +198,7 @@ ul.Breadcrumbs li a:hover {
     font-size: 45px;
 }
 
-#ProductPhoto {
+.ProductPhoto {
     width: 297px; 
     height: 297px;
 }

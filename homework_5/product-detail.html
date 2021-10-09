@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -22,16 +22,16 @@
                 <h2 id="PumpkinSpiceText">Pumpkin Spice Bun</h2>
                 <div id="GlazeBox">
                     <p><b>Choose your glaze</b></p>
-                    <div id="OptionsBox">Vanilla Milk (recommended)</div>
+                    <div class="OptionsBox">Vanilla Milk (recommended)</div>
                 </div>
                 <div id="RollsBox">
                     <p><b>How many rolls would you like?</b></p>
-                    <div id="OptionsBox">1</div>
+                    <div class="OptionsBox">1</div>
                 </div>
                 <button class="GeneralButton">Order</button>
             </div>
             <div id="DescriptionSide">
-                <img id="PumpkinPic" src="Images/pumpkin with border.png" alt="a cinnamon bun with a clear glaze and 
+                <img id="PumpkinPic" src="Images/pumpkin_with_border.png" alt="a cinnamon bun with a clear glaze and 
                 orange pumpkin pieces on top of a white plate">
                 <p id="DescriptionText">An aromatic, fall-inspired bun available for <br> a limited time.</p>
                 <p>*Contains gluten</p>
@@ -43,82 +43,75 @@
     </div>
 
     <!--Page Header-->
-<header class="PageHeader">
-    <img class="HeaderLogo" src="Images/bun_bun_logo.png" alt="A circular logo saying Bun Bun Bake Shop with a little brown bun with a heart in the middle.">
-
-    <!--Navigation Menu-->
-    <ul id="TopBarNavigation">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="">About Us</a></li>
-        <li><a href="product-browsing.html">Browse Flavors</a></li>
-        <li><a href="">Catering</a></li>
-        <li><a href="">Same-day Pick-up</a></li>
-        <li>
-                <!--Shopping Cart-->
-            <div id="ShoppingCart">
-                <a href="#">
-                    <span id="CartText">CART</span>
-                    <span class="glyphicon glyphicon-shopping-cart"></span>
-                </a>
-            </div>
-        </li>
+    <header class="PageHeader">
+        <img class="HeaderLogo" src="Images/bun_bun_logo.png" alt="A circular logo saying Bun Bun Bake Shop with a little brown bun with a heart in the middle.">
+        <!--Navigation Menu-->
+            <!-- Citation: https://www.w3schools.com/css/css_navbar_horizontal.asp-->
+        <ul id="TopBarNavigation">
+            <li><a class="NavFont" href="index.html">Home</a></li>
+            <li><a class="NavFont" href="about-us.html">About Us</a></li>
+            <li><a class="NavFont" href="product-browsing.html">Browse Flavors</a></li>
+            <li><a class="NavFont" href="">Catering</a></li>
+            <li><a class="NavFont" href="">Same-day Pick-up</a></li>
+            <li><a class="NavFont" href="">CART  </a><span><img src="Images/shopping_cart.png" alt="shopping cart logo"></span></li>
+        </ul>
+    </header>
+    <!--Bread Crumbs-->
+    <!--Citation: https://www.w3schools.com/howto/howto_css_breadcrumbs.asp-->
+    <ul class="Breadcrumbs">
+        <li id="HomeBreadcrumb"><a href="index.html">Home</a></li>
+        <li id="SlashCrumb"><a href="_blank">  /  </a></li>
+        <li id="OnBrowseFlavors"><a href="product-browsing.html">Browse Flavors</a></li>
     </ul>
-</header>
-<!--Bread Crumbs-->
-<!--Citation: https://www.w3schools.com/howto/howto_css_breadcrumbs.asp-->
-<ul class="BreadCrumbs">
-    <li id="HomeBreadCrumb"><a href="index.html">Home</a></li>
-    <li id="SlashCrumb"><a href="_blank">  /  </a></li>
-    <li id="OnBrowseFlavors"><a href="product-browsing.html">Browse Flavors</a></li>
-</ul>
-
-<h1 class="FlavorsHeader">Flavors</h1>
-
-<!--Product Boxes-->
-<a href="product-detail.hmtl">
-    <div id="ProductBox1">
-         <img src="Images/Pumpkin Spice.png" id="ProductPhoto" alt="a glazed cinnamon bun with pumpkin pieces">
+    
+    <h1 class="FlavorsHeader">Flavors</h1>
+    
+    <!--Product Boxes-->
+    <a href="product-detail.html">
+        <div id="ProductBox1">
+             <img src="Images/Pumpkin_Spice.png" class="ProductPhoto" alt="a glazed cinnamon bun with pumpkin pieces">
+        </div>
+    </a>
+    <div id="PumpkinSpiceTextContainer">
+        <p><span style="color:red;"><b>(New)</b></span> Pumpkin Spice</p>
     </div>
-</a>
-<div id="PumpkinSpiceTextContainer">
-    <p><span style="color:red;"><b>(New)</b></span> Pumpkin Spice</p>
-</div>
+    
+    
+    <div id="ProductBox2">
+        <img src="Images/Original.png" class="ProductPhoto" alt="a classic white glazed cinnamon bun">
+    </div>
+    <div id="OriginalContainer">
+        <p> Original</p>
+    </div>
+    
+    <div id="ProductBox3">
+        <img src="Images/Gluten_Free_Original.png" id="GFProductPhoto" alt="a classic white glazed cinnamon bun with GF logo to represent GF free">
+    </div>
+    <div id="GlutenFreeContainer">
+        <p> Gluten-Free Original</p>
+    </div>
+    
+    <div id="ProductBox4">
+        <img src="Images/Carmel_Pecan.png" class="ProductPhoto" alt="a brown glazed cinnamon bun with pecans on top">
+    </div>
+    <div id="CarmelPecanContainer">
+        <p>Carmel Pecan</p>
+    </div>
+    
+    <div id="ProductBox5">
+        <img src="Images/Walnut.png" class="ProductPhoto" alt="a white glazed cinnamon bun">
+    </div>
+    <div id="WalnutContainer">
+        <p>Walnut</p>
+    </div>
+       
+    <div id="ProductBox6">
+        <img src="Images/Blackberry.png" class="ProductPhoto" alt="a clear glazed cinnamon bun with red filling">
+    </div>
+    <div id="BlackberryContainer">
+        <p>Blackberry</p>
+    </div>
 
-
-<div id="ProductBox2">
-    <img src="Images/Original.png" id="ProductPhoto" alt="a classic white glazed cinnamon bun">
-</div>
-<div id="OriginalContainer">
-    <p> Original</p>
-</div>
-
-<div id="ProductBox3">
-    <img src="Images/Gluten Free Original.png" id="GFProductPhoto" alt="a classic white glazed cinnamon bun with GF logo to represent GF free">
-</div>
-<div id="GlutenFreeContainer">
-    <p> Gluten-Free Original</p>
-</div>
-
-<div id="ProductBox4">
-    <img src="Images/Carmel Pecan.png" id="ProductPhoto" alt="a brown glazed cinnamon bun with pecans on top">
-</div>
-<div id="CarmelPecanContainer">
-    <p>Carmel Pecan</p>
-</div>
-
-<div id="ProductBox5">
-    <img src="Images/Walnut.png" id="ProductPhoto" alt="a white glazed cinnamon bun">
-</div>
-<div id="WalnutContainer">
-    <p>Walnut</p>
-</div>
-   
-<div id="ProductBox6">
-    <img src="Images/Blackberry.png" id="ProductPhoto" alt="a clear glazed cinnamon bun with red filling">
-</div>
-<div id="BlackberryContainer">
-    <p>Blackberry</p>
-</div>
 <!--Footer-->
     <footer id="ProductBrowsingPageFooter"></footer> 
 </body>
