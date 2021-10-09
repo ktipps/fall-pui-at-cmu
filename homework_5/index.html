@@ -12,69 +12,59 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 <body>
 <!--Page Header-->
-    <header class="pageheader">
-        <img class="headerlogo" src="Images/bun_bun_logo.png" alt="A circular logo saying Bun Bun Bake Shop with a little brown bun with a heart in the middle.">
+    <header class="PageHeader">
+        <img class="HeaderLogo" src="Images/bun_bun_logo.png" alt="A circular logo saying Bun Bun Bake Shop with a little brown bun with a heart in the middle.">
 
-        <!--Navigation Menu-->
-        <!-- Citation: https://www.w3schools.com/css/css_navbar_horizontal.asp-->
-        <ul id="topbarnavigation">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="">About Us</a></li>
-            <li><a href="product-browsing.html">Browse Flavors</a></li>
-            <li><a href="">Catering</a></li>
-            <li><a href="">Same-day Pick-up</a></li>
-            <li>
-                <!--Shopping Cart-->
-                <div id="shoppingcart">
-                    <a href="#">
-                        <span id="carttext">CART</span>
-                        <span class="glyphicon glyphicon-shopping-cart"></span>
-                    </a>
-                </div>
-            </li>
-        </ul>
+    <!--Navigation Menu-->
+    <!-- Citation: https://www.w3schools.com/css/css_navbar_horizontal.asp-->
+    <ul id="TopBarNavigation">
+        <li><a class="NavFont" href="index.html">Home</a></li>
+        <li><a class="NavFont" href="">About Us</a></li>
+        <li><a class="NavFont" href="product-browsing.html">Browse Flavors</a></li>
+        <li><a class="NavFont" href="">Catering</a></li>
+        <li><a class="NavFont" href="">Same-day Pick-up</a></li>
+        <li><a class="NavFont" href="">CART  </a><span><img src="Images/shopping_cart.png" alt="shopping cart logo"></span></li>
+    </ul>
 </header>
 <!--Banner Image-->
 <!--Citation: https://www.w3schools.com/howto/howto_css_hero_image.asp-->
-    <div class="bannerimage">
-        <div class="bannertext">
-            <h1 id="bunsouttext">Buns out, Funs out</h1>
-            <p id="favoritesback">Your favorites are back</p>
-            <button class="browsebutton">Browse Flavors</button>
+    <div class="BannerImage">
+        <div class="BannerText">
+            <h1 id="BunsOutText">Buns out, Funs out</h1>
+            <p id="FavoritesBack">Your favorites are back</p>
+            <button class="BrowseButton">Browse Flavors</button>
         </div>
     </div>
 
 <!--Service Boxes-->
 <!--Citation: https://css-tricks.com/stacked-borders/-->
-    <div id="servicecontainer">
-        <div class="servicebox">
-            <img id="servicelogo" src="images/birthday_cake_icon.png" alt="a birthday cake logo in icy blue">
-            <h3 id="servicetitle">Catering</h3>
-            <p class="servicetext">Weddings, parties, corporate events. <br>We do it all.</p>
-            <button class="generalbutton">Learn More</button>
+    <div id="ServiceContainer">
+        <div class="ServiceBox">
+            <img id="ServiceLogo" src="images/birthday_cake_icon.png" alt="a birthday cake logo in icy blue">
+            <h3 id="ServiceTitle">Catering</h3>
+            <p class="ServiceText">Weddings, parties, corporate events. <br>We do it all.</p>
+            <button class="GeneralButton">Learn More</button>
         </div>
-        <div class="servicebox">
-            <img id="servicelogo" src="images/about_us_logo.png" alt="a whisk in an icy blue color">
-            <h3 id="servicetitle">About <br> Us</h3>
-            <p class="servicetext">Learn about how we became Pittsburgh’s best bun shop.</p>
-            <button class="generalbutton">Learn More</button>
+        <div class="ServiceBox">
+            <img id="ServiceLogo" src="images/about_us_logo.png" alt="a whisk in an icy blue color">
+            <h3 id="ServiceTitle">About <br> Us</h3>
+            <p class="ServiceText">Learn about how we became Pittsburgh’s best bun shop.</p>
+            <button class="GeneralButton">Learn More</button>
         </div>
-        <div class="servicebox">
-            <img id="servicelogo" src="Images/same_day_pick_up_logo.png" alt="a bun logo in icy blue">
-            <h3 id="servicetitle">Same-Day <br> Pick-Up</h3>
-            <p class="servicetext">No need to wait.<br>Order online and pick up that day.</p>
-            <button class="generalbutton">Learn More</button>
+        <div class="ServiceBox">
+            <img id="ServiceLogo" src="Images/same_day_pick_up_logo.png" alt="a bun logo in icy blue">
+            <h3 id="ServiceTitle">Same-Day <br> Pick-Up</h3>
+            <p class="ServiceText">No need to wait.<br>Order online and pick up that day.</p>
+            <button class="GeneralButton">Learn More</button>
         </div>
     </div>
 
 <!--Footer-->
-<footer id="pagefooter"></footer>
+<footer id="PageFooter"></footer>
     
 </body>
 </html>

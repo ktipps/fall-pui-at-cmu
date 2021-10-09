@@ -12,39 +12,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 <body>
 <!--Page Header-->
 <header class="pageheader">
     <img class="headerlogo" src="Images/bun_bun_logo.png" alt="A circular logo saying Bun Bun Bake Shop with a little brown bun with a heart in the middle.">
-
     <!--Navigation Menu-->
-    <ul id="topbarnavigation">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="">About Us</a></li>
-        <li><a href="product-browsing.html">Browse Flavors</a></li>
-        <li><a href="">Catering</a></li>
-        <li><a href="">Same-day Pick-up</a></li>
-        <li>
-                <!--Shopping Cart-->
-            <div id="shoppingcart">
-                <a href="#">
-                    <span id="carttext">CART</span>
-                    <span class="glyphicon glyphicon-shopping-cart"></span>
-                </a>
-            </div>
-        </li>
+        <!-- Citation: https://www.w3schools.com/css/css_navbar_horizontal.asp-->
+    <ul id="TopBarNavigation">
+        <li><a class="NavFont" href="index.html">Home</a></li>
+        <li><a class="NavFont" href="">About Us</a></li>
+        <li><a class="NavFont" href="product-browsing.html">Browse Flavors</a></li>
+        <li><a class="NavFont" href="">Catering</a></li>
+        <li><a class="NavFont" href="">Same-day Pick-up</a></li>
+        <li><a class="NavFont" href="">CART  </a><span><img src="Images/shopping_cart.png" alt="shopping cart logo"></span></li>
     </ul>
 </header>
 <!--Bread Crumbs-->
 <!--Citation: https://www.w3schools.com/howto/howto_css_breadcrumbs.asp-->
-<ul class="breadcrumbs">
-    <li id="homebreadcrumb"><a href="index.html">Home</a></li>
-    <li id="slashcrumb"><a href="_blank">  /  </a></li>
-    <li id="onbrowseflavors"><a href="product-browsing.html">Browse Flavors</a></li>
+<ul class="Breadcrumbs">
+    <li id="HomeBreadcrumb"><a href="index.html">Home</a></li>
+    <li id="SlashCrumb"><a href="_blank">  /  </a></li>
+    <li id="OnBrowseFlavors"><a href="product-browsing.html">Browse Flavors</a></li>
 </ul>
 
 <h1 class="FlavorsHeader">Flavors</h1>
