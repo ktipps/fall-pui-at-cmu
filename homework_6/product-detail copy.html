@@ -28,7 +28,8 @@
             </div>
             <div id="OptionBoxSide">
                 <h2 id="PumpkinSpiceText">Pumpkin Spice Bun</h2>
-                <label for="glazeType" id="glazeLabel">Choose your glaze </label>
+                <form action="shopping_cart.html" method="post">
+                    <label for="glazeType" id="glazeLabel">Choose your glaze </label>
                 <br>
                 <select id="glazeType" class="test" name="glazeType">
                     <option value="vanillaMilk">Vanilla Milk (recommended)</option>
@@ -47,9 +48,11 @@
                 </select>
                 <br>
                 <input id="submit" type="submit" value="Submit"/>
+                </form>
             </div>
         </div>
-         <!--Page Header-->
+    <!--Background Content-->
+    <!--Page Header-->
     <header class="PageHeader">
         <img class="HeaderLogo" src="Images/bun_bun_logo.png" alt="A circular logo saying Bun Bun Bake Shop with a little brown bun with a heart in the middle.">
         <!--Navigation Menu-->

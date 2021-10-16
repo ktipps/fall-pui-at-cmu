@@ -8,41 +8,29 @@
 <script src="main.js"></script>
 <link rel="stylesheet" href="shopping_cart.css">
 </head>
+<!--Page Header-->
+    <header class="PageHeader">
+        <img class="HeaderLogo" src="Images/bun_bun_logo.png" alt="A circular logo saying Bun Bun Bake Shop with a little brown bun with a heart in the middle.">
 
-<!--
-<body onload="doShowAll()">
-	<h2>Shopping Cart with HTML5 Storage Project</h2>
-	<p>Insert items and quantity for your shopping cart. </p>
-	<form name=ShoppingList>
+    <!--Navigation Menu-->
+    <!-- Citation: https://www.w3schools.com/css/css_navbar_horizontal.asp-->
+    <ul id="TopBarNavigation">
+        <li><a class="NavFont" href="index.html">Home</a></li>
+        <li><a class="NavFont" href="about-us.html">About Us</a></li>
+        <li><a class="NavFont" href="product-browsing.html">Browse Flavors</a></li>
+        <li><a class="NavFont" href="">Catering</a></li>
+        <li><a class="NavFont" href="">Same-day Pick-up</a></li>
+        <li><a class="NavFont" href="shopping_cart.html">CART</a><span><img src="Images/shopping_cart.png" alt="shopping cart logo"></span></li>
+    </ul>
+</header>
+<!--Bread Crumbs-->
+<!--Citation: https://www.w3schools.com/howto/howto_css_breadcrumbs.asp-->
+<ul class="Breadcrumbs">
+    <li id="HomeBreadcrumb"><a href="index.html">Home</a></li>
+    <li id="SlashCrumb"><a href="_blank">  /  </a></li>
+    <li id="OnBrowseFlavors"><a href="shopping_cart.html">Shopping Cart</a></li>
+</ul>
 
-		<div id="main">
-			<table>
-				<tr>
-
-					<td><b>Item:</b><input type=text name=name></td>
-					<td><b>Quantity:</b><input type=text name=data></td>
-
-				</tr>
-
-				<tr>
-					<td>
-					    <input type=button value="Save"   onclick="SaveItem()"> 
-					    <input type=button value="Update" onclick="ModifyItem()"> 
-					    <input type=button value="Delete" onclick="RemoveItem()">
-					</td>
-				</tr>
-			</table>
-		</div>
-
-		<div id="items_table">
-			<h3>Shopping List</h3>
-			<table id=list></table>
-			<p>
-				<label><input type=button value="Clear" onclick="ClearAll()">
-					<i>* Delete all items</i></label>
-			</p>
-		</div>
-	</form>
-    -->
+<h1 class="FlavorsHeader">Your Cart</h1>
 </body>
 </html>
