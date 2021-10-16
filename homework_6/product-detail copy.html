@@ -18,8 +18,37 @@
 <body>
     <div id="overlay">
         <div id="ProductDetailBox">
+            <h2 id="PumpkinSpiceText">Pumpkin Spice Bun</h2>
             <a href="product-browsing.html"><img id="ExitLogo" src="Images/Exit.png" alt="exit button image"></a>
             <div id="OptionBoxSide">
+                <label for="glazeType">Choose your glaze </label>
+                <select id="glazeType" name="glazeType">
+                    <option value="vanillaMilk">Vanilla Milk (recommended)</option>
+                    <option value="sugarMilk">Sugar Milk</option>
+                    <option value="doubleChocolate">Double Chocolate</option>
+                    <option value="None">None</option>
+                </select><br>
+                <label for="quantity">How many rolls would you like?</label>
+                <select id="quantity" name="quantity">
+                    <option value="one">1</option>
+                    <option value="three">3</option>
+                    <option value="six">6</option>
+                    <option value="12">12 (a dozen)</option>
+                </select>
+                <input id="submit" type="submit" value="submit"/>
+            </div>
+            <div id="DescriptionSide">
+                <img id="PumpkinPic" src="Images/pumpkin_with_border.png" alt="a cinnamon bun with a clear glaze and 
+                orange pumpkin pieces on top of a white plate">
+                <p id="DescriptionText">An aromatic, fall-inspired bun available for <br> a limited time.</p>
+                <p>*Contains gluten</p>
+                <p>*Contains wheat</p>
+            </div>
+
+
+
+
+<!--
                 <h2 id="PumpkinSpiceText">Pumpkin Spice Bun</h2>
                 <div id="GlazeBox">
                     <p><b>Choose your glaze</b></p>
@@ -43,12 +72,10 @@
                 <p id="DescriptionText">An aromatic, fall-inspired bun available for <br> a limited time.</p>
                 <p>*Contains gluten</p>
                 <p>*Contains wheat</p>
-
-                
             </div>
         </div>
     </div>
-
+-->
     <!--Page Header-->
     <header class="PageHeader">
         <img class="HeaderLogo" src="Images/bun_bun_logo.png" alt="A circular logo saying Bun Bun Bake Shop with a little brown bun with a heart in the middle.">
