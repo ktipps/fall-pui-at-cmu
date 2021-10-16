@@ -1,4 +1,27 @@
-//add new key=>value to the HTML5 storage
+(function() {
+  var glazeType = document.getElementById('glazeType'); // Selecting Glaze Type box
+  var rollQuantity = document.getElementById('rollQuantity'); //Selecting the Roll Quantity Box
+}
+
+addEvent(glazeType, 'change', function(){
+  if(this.value ==- 'choose') {
+    model.innerHTML = '<option>Please choose a glaze first</option>'; 
+    return;
+  }
+  var rollQuantity = getrollQuantity(this.value); 
+
+  var options = '<option>Please choose a quantity</option>';
+  for (var key in rollQuantity) {
+    options += '<option value="' + key + '">' + rollQuantity[key] + '</option>'; 
+  }
+  model.innerHTML = options;
+});
+
+
+
+
+
+/*//add new key=>value to the HTML5 storage
 function SaveItem() {
 			
 	var name = document.forms.ShoppingList.name.value;
@@ -65,10 +88,12 @@ function doShowAll() {
 }
 
 /*
+/*
  =====> Checking the browser support
  //this step may not be required as most of modern browsers do support HTML5
  */
  //below function may be redundant
+ /*
 function CheckBrowser() {
 	if ('localStorage' in window && window['localStorage'] !== null) {
 		// we can use localStorage object to store data
