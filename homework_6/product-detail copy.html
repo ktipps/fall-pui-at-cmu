@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bun Bun Bakeshop</title>
-    <link rel="stylesheet" href="product-detail.css">
+    <link rel="stylesheet" href="product-detail copy.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -18,66 +18,38 @@
 <body>
     <div id="overlay">
         <div id="ProductDetailBox">
-            <h2 id="PumpkinSpiceText">Pumpkin Spice Bun</h2>
-            <a href="product-browsing.html"><img id="ExitLogo" src="Images/Exit.png" alt="exit button image"></a>
+            <div id="DescriptionSide">
+                <a href="product-browsing.html"><img id="ExitLogo" src="Images/Exit.png" alt="exit button image"></a>
+                <img id="PumpkinPic" src="Images/pumpkin_with_border.png" alt="a cinnamon bun with a clear glaze and 
+                orange pumpkin pieces on top of a white plate">
+                <p id="DescriptionText">An aromatic, fall-inspired bun available for a limited time.</p>
+                <p>*Contains gluten</p>
+                <p>*Contains wheat</p>
+            </div>
             <div id="OptionBoxSide">
-                <label for="glazeType">Choose your glaze </label>
-                <select id="glazeType" name="glazeType">
-                    <option value="choose">Please choose a glaze</option>
+                <h2 id="PumpkinSpiceText">Pumpkin Spice Bun</h2>
+                <label for="glazeType" id="glazeLabel">Choose your glaze </label>
+                <br>
+                <select id="glazeType" class="test" name="glazeType">
                     <option value="vanillaMilk">Vanilla Milk (recommended)</option>
                     <option value="sugarMilk">Sugar Milk</option>
                     <option value="doubleChocolate">Double Chocolate</option>
                     <option value="None">None</option>
                 </select><br>
-                <label for="rollQuantity">How many rolls would you like?</label>
+                <br>
+                <label for="rollQuantity" id="rollQuantLabel">How many rolls would you like?</label>
+                <br>
                 <select id="rollQuantity" name="rollQuantity">
                     <option value="one">1</option>
                     <option value="three">3</option>
                     <option value="six">6</option>
                     <option value="12">12 (a dozen)</option>
                 </select>
-                <input id="submit" type="submit" value="submit"/>
-            </div>
-            <div id="DescriptionSide">
-                <img id="PumpkinPic" src="Images/pumpkin_with_border.png" alt="a cinnamon bun with a clear glaze and 
-                orange pumpkin pieces on top of a white plate">
-                <p id="DescriptionText">An aromatic, fall-inspired bun available for <br> a limited time.</p>
-                <p>*Contains gluten</p>
-                <p>*Contains wheat</p>
-            </div>
-
-
-
-
-<!--
-                <h2 id="PumpkinSpiceText">Pumpkin Spice Bun</h2>
-                <div id="GlazeBox">
-                    <p><b>Choose your glaze</b></p>
-                    <div class="OptionsBox">Vanilla Milk (recommended)
-                        <span><img class="DropDownTriangle" src="Images/outline_arrow_drop_down.png" 
-                            alt="a triangle for a dropdown menu"></span>
-                    </div>
-                </div>
-                <div id="RollsBox">
-                    <p><b>How many rolls would you like?</b></p>
-                    <div class="OptionsBox">1
-                        <span><img class="DropDownTriangle" src="Images/outline_arrow_drop_down.png"
-                             alt="a triangle for a dropdown menu"></span>
-                    </div>
-                </div>
-                <button class="GeneralButton">Order</button>
-            </div>
-            <div id="DescriptionSide">
-                <img id="PumpkinPic" src="Images/pumpkin_with_border.png" alt="a cinnamon bun with a clear glaze and 
-                orange pumpkin pieces on top of a white plate">
-                <p id="DescriptionText">An aromatic, fall-inspired bun available for <br> a limited time.</p>
-                <p>*Contains gluten</p>
-                <p>*Contains wheat</p>
+                <br>
+                <input id="submit" type="submit" value="Submit"/>
             </div>
         </div>
-    </div>
--->
-    <!--Page Header-->
+         <!--Page Header-->
     <header class="PageHeader">
         <img class="HeaderLogo" src="Images/bun_bun_logo.png" alt="A circular logo saying Bun Bun Bake Shop with a little brown bun with a heart in the middle.">
         <!--Navigation Menu-->
