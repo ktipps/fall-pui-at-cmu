@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="main.js"></script>
+<script type="text/javascript" src="main.js"></script>
 <link rel="stylesheet" href="shopping_cart.css">
 </head>
 <!--Page Header-->
@@ -20,7 +20,7 @@
         <li><a class="NavFont" href="product-browsing.html">Browse Flavors</a></li>
         <li><a class="NavFont" href="">Catering</a></li>
         <li><a class="NavFont" href="">Same-day Pick-up</a></li>
-        <li><a class="NavFont" href="shopping_cart.html">CART</a><span><img src="Images/shopping_cart.png" alt="shopping cart logo"></span></li>
+        <li><a class="NavFont" href="shopping_cart.html">CART</a><span><p id="displayCount">0</p></span><span><img src="Images/shopping_cart.png" alt="shopping cart logo"></span></li>
     </ul>
 </header>
 <!--Bread Crumbs-->
@@ -43,6 +43,7 @@
     <div class="itemDetailsSideCart">
         <p><b>Pumpkin Spice Bun</b></p>
         <p>Vanilla Milk Glaze</p>
+        <!--Citation: https://uxplanet.org/how-to-create-a-shopping-cart-ui-using-html-css-e5db3cd55aa0-->
         <div class="itemCounter">
             <div class="quantityButton">+</div>
             <div class="itemCount">12</div>
@@ -62,6 +63,7 @@
     <div class="itemDetailsSideCart">
         <p><b>Original Bun</b></p>
         <p>Vanilla Milk Glaze</p>
+        <!--Citation: https://uxplanet.org/how-to-create-a-shopping-cart-ui-using-html-css-e5db3cd55aa0-->
         <div class="itemCounter">
             <div class="quantityButton">+</div>
             <div class="itemCount">1</div>
@@ -74,5 +76,7 @@
     </div>
 </div>
 </div>
+<p id="testing" onclick="upCounter()">1</p>
+<button onclick="upCounter()">test</button>
 </body>
 </html>
