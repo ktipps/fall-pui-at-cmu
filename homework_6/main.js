@@ -23,6 +23,8 @@ addEvent(glazeType, 'change', function() {
 
 // Changing the Cart Value
 
+var countValue = 0;
 function upCounter() {
-	document.getElementById("testing").innerHTML = "2";
+	countValue += 1; 
+	document.getElementById("countValue").innerHTML = countValue;
 }

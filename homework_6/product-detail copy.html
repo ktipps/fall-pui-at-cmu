@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bun Bun Bakeshop</title>
+    <script type="text/javascript" src="main.js"></script>
     <link rel="stylesheet" href="product-detail copy.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,16 +18,15 @@
 <!--Overlay for Product Details-->
 <body>
     <div id="overlay">
-        <div id="ProductDetailBox">
-            <div id="DescriptionSide">
-                <a href="product-browsing.html"><img id="ExitLogo" src="Images/Exit.png" alt="exit button image"></a>
-                <img id="PumpkinPic" src="Images/pumpkin_with_border.png" alt="a cinnamon bun with a clear glaze and 
+        <div id="productDetailBox">
+            <div id="descriptionSide">
+                <img id="pumpkinPic" src="Images/pumpkin_with_border.png" alt="a cinnamon bun with a clear glaze and 
                 orange pumpkin pieces on top of a white plate">
-                <p id="DescriptionText">An aromatic, fall-inspired bun available for a limited time.</p>
+                <p id="descriptionText">An aromatic, fall-inspired bun available for a limited time.</p>
                 <p>*Contains gluten</p>
                 <p>*Contains wheat</p>
             </div>
-            <div id="OptionBoxSide">
+            <div id="optionBoxSide">
                 <h2 id="PumpkinSpiceText">Pumpkin Spice Bun</h2>
                 <form action="shopping_cart.html" method="post">
                     <label for="glazeType" id="glazeLabel">Choose your glaze </label>
@@ -46,29 +46,35 @@
                     <option value="six">6</option>
                     <option value="12">12 (a dozen)</option>
                 </select>
-                <br>
-                <input id="submit" type="submit" value="Submit"/>
+                <!--<input id="submit" type="submit" value="Submit"/>-->
                 </form>
+                <br>
+                <button onclick="upCounter()">test</button>
+            </div>
+            <div id="exitLogoSide">
+                <a href="product-browsing.html"><img id="exitLogo" src="Images/Exit.png" alt="exit button image"></a>
             </div>
         </div>
-    <!--Background Content-->
+    </div>
+<!--Page Header-->
+
     <!--Page Header-->
-    <header class="PageHeader">
-        <img class="HeaderLogo" src="Images/bun_bun_logo.png" alt="A circular logo saying Bun Bun Bake Shop with a little brown bun with a heart in the middle.">
+    <header class="pageHeader">
+        <img class="headerLogo" src="Images/bun_bun_logo.png" alt="A circular logo saying Bun Bun Bake Shop with a little brown bun with a heart in the middle.">
         <!--Navigation Menu-->
             <!-- Citation: https://www.w3schools.com/css/css_navbar_horizontal.asp-->
-        <ul id="TopBarNavigation">
+        <ul id="topBarNavigation">
             <li><a class="NavFont" href="index.html">Home</a></li>
             <li><a class="NavFont" href="about-us.html">About Us</a></li>
             <li><a class="NavFont" href="product-browsing.html">Browse Flavors</a></li>
             <li><a class="NavFont" href="">Catering</a></li>
             <li><a class="NavFont" href="">Same-day Pick-up</a></li>
-            <li><a class="NavFont" href="">CART  </a><span><img src="Images/shopping_cart.png" alt="shopping cart logo"></span></li>
+            <li><a class="NavFont" href="shopping_cart.html">CART</a><span><p id="countValue" onclick="upCounter()">0</p></span><span><img src="Images/shopping_cart.png" alt="shopping cart logo"></span></li>
         </ul>
     </header>
     <!--Bread Crumbs-->
     <!--Citation: https://www.w3schools.com/howto/howto_css_breadcrumbs.asp-->
-    <ul class="Breadcrumbs">
+    <ul class="breadcrumbs">
         <li id="HomeBreadcrumb"><a href="index.html">Home</a></li>
         <li id="SlashCrumb"><a href="_blank">  /  </a></li>
         <li id="OnBrowseFlavors"><a href="product-browsing.html">Browse Flavors</a></li>
