@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bun Bun Bakeshop</title>
     <script type="text/javascript" src="main.js"></script>
-    <link rel="stylesheet" href="product-detail.css">
+    <link rel="stylesheet" href="product-detail-copy.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -15,45 +15,65 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
+
+<!--Image citations: 
+Photos via Unsplash and Flickr
+Michael Fallon - https://unsplash.com/photos/DnGGIffnjTY
+Dilyara Garifullina - https://unsplash.com/photos/WmpGRa898oU
+Yosep Sugiarto - https://unsplash.com/photos/1PEqqv4i2iM
+Gayatri Malhotra - https://unsplash.com/photos/MfuXRXCEy4k
+Bour3 - https://www.flickr.com/photos/bour3/8157517971/
+Creating a Brand - https://unsplash.com/photos/JSOgX6eaYy4-->
+
 <!--Overlay for Product Details-->
 <body onload="pageLoad()">
     <div id="overlay">
-        <div id="ProductDetailBox">
-            <a href="product-browsing.html"><img id="ExitLogo" src="Images/Exit.png" alt="exit button image"></a>
-            <div id="OptionBoxSide">
-                <h2 id="PumpkinSpiceText">Pumpkin Spice Bun</h2>
-                <div id="GlazeBox">
-                    <p><b>Choose your glaze</b></p>
-                    <div class="OptionsBox">Vanilla Milk (recommended)
-                        <span><img class="DropDownTriangle" src="Images/outline_arrow_drop_down.png" 
-                            alt="a triangle for a dropdown menu"></span>
-                    </div>
-                </div>
-                <div id="RollsBox">
-                    <p><b>How many rolls would you like?</b></p>
-                    <div class="OptionsBox">1
-                        <span><img class="DropDownTriangle" src="Images/outline_arrow_drop_down.png"
-                             alt="a triangle for a dropdown menu"></span>
-                    </div>
-                </div>
-                <button class="GeneralButton" onclick="upCounter()">Order</button>
-            </div>
-            <div id="DescriptionSide">
-                <img id="PumpkinPic" src="Images/pumpkin_with_border.png" alt="a cinnamon bun with a clear glaze and 
+        <div id="productDetailBox">
+            <div id="descriptionSide">
+                <img id="pumpkinPic" src="Images/pumpkin_with_border.png" alt="a cinnamon bun with a clear glaze and 
                 orange pumpkin pieces on top of a white plate">
-                <p id="DescriptionText">An aromatic, fall-inspired bun available for <br> a limited time.</p>
+                <p id="descriptionText">An aromatic, fall-inspired bun available for a limited time.</p>
                 <p>*Contains gluten</p>
                 <p>*Contains wheat</p>
             </div>
+            <div id="optionBoxSide">
+                <h2 id="PumpkinSpiceText">Pumpkin Spice Bun</h2>
+                <form action="shopping_cart.html" method="post">
+                    <label for="glazeType" id="glazeLabel">Choose your glaze </label>
+                <br>
+                <select id="glazeType" class="test" name="glazeType">
+                    <option value="vanillaMilk">Vanilla Milk (recommended)</option>
+                    <option value="sugarMilk">Sugar Milk</option>
+                    <option value="doubleChocolate">Double Chocolate</option>
+                    <option value="None">None</option>
+                </select><br>
+                <br>
+                <label for="rollQuantity" id="rollQuantLabel">How many rolls would you like?</label>
+                <br>
+                <select id="rollQuantity" name="rollQuantity">
+                    <option value="one">1</option>
+                    <option value="three">3</option>
+                    <option value="six">6</option>
+                    <option value="12">12 (a dozen)</option>
+                </select>
+                <!--<input id="submit" type="submit" value="Submit"/>-->
+                </form>
+                <br>
+                <button onclick="increaseCartItemCount()">test</button>
+            </div>
+            <div id="exitLogoSide">
+                <a href="product-browsing.html"><img id="exitLogo" src="Images/Exit.png" alt="exit button image"></a>
+            </div>
         </div>
     </div>
+<!--Page Header-->
 
     <!--Page Header-->
-    <header class="PageHeader">
-        <img class="HeaderLogo" src="Images/bun_bun_logo.png" alt="A circular logo saying Bun Bun Bake Shop with a little brown bun with a heart in the middle.">
+    <header class="pageHeader">
+        <img class="headerLogo" src="Images/bun_bun_logo.png" alt="A circular logo saying Bun Bun Bake Shop with a little brown bun with a heart in the middle.">
         <!--Navigation Menu-->
             <!-- Citation: https://www.w3schools.com/css/css_navbar_horizontal.asp-->
-        <ul id="TopBarNavigation">
+        <ul id="topBarNavigation">
             <li><a class="NavFont" href="index.html">Home</a></li>
             <li><a class="NavFont" href="about-us.html">About Us</a></li>
             <li><a class="NavFont" href="product-browsing.html">Browse Flavors</a></li>
@@ -64,7 +84,7 @@
     </header>
     <!--Bread Crumbs-->
     <!--Citation: https://www.w3schools.com/howto/howto_css_breadcrumbs.asp-->
-    <ul class="Breadcrumbs">
+    <ul class="breadcrumbs">
         <li id="HomeBreadcrumb"><a href="index.html">Home</a></li>
         <li id="SlashCrumb"><a href="_blank">  /  </a></li>
         <li id="OnBrowseFlavors"><a href="product-browsing.html">Browse Flavors</a></li>
