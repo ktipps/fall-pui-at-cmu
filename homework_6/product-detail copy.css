@@ -127,6 +127,11 @@
         font-size: 20px;
     }
     
+    #cartItemCount {
+        display: inline; 
+        margin-left: 10px;
+        margin-right: 5px;
+    }
     /*citation for breadcrumbs: https://www.w3schools.com/howto/howto_css_breadcrumbs.asp */
     
     ul.breadcrumbs {

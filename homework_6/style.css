@@ -57,6 +57,12 @@ li {
     font-size: 20px;
 }
 
+#cartItemCount {
+    display: inline; 
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
 .BannerImage {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Images/banner_image.png");
     height:100%;

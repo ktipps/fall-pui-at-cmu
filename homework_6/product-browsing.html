@@ -15,6 +15,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
+<!--Image citations: 
+Photos via Unsplash and Flickr
+Michael Fallon - https://unsplash.com/photos/DnGGIffnjTY
+Dilyara Garifullina - https://unsplash.com/photos/WmpGRa898oU
+Yosep Sugiarto - https://unsplash.com/photos/1PEqqv4i2iM
+Gayatri Malhotra - https://unsplash.com/photos/MfuXRXCEy4k
+Bour3 - https://www.flickr.com/photos/bour3/8157517971/
+Creating a Brand - https://unsplash.com/photos/JSOgX6eaYy4-->
+
 <body onload="pageLoad()">
 <!--Page Header-->
 <header class="PageHeader">
@@ -27,8 +36,7 @@
         <li><a class="NavFont" href="product-browsing.html">Browse Flavors</a></li>
         <li><a class="NavFont" href="">Catering</a></li>
         <li><a class="NavFont" href="">Same-day Pick-up</a></li>
-        <li><a class="NavFont" href="shopping_cart.html">CART</a><span><p id="cartItemCount">0</p>
-        </span><span><img src="Images/shopping_cart.png" alt="shopping cart logo"></span></li>
+        <li><a class="NavFont" href="shopping_cart.html">CART</a><span><p id="cartItemCount" onclick="increaseCartItemCount()">0</p></span><span><img src="Images/shopping_cart.png" alt="shopping cart logo"></span></li>
     </ul>
 </header>
 <!--Bread Crumbs-->

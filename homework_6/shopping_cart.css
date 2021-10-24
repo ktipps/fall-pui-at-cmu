@@ -57,6 +57,12 @@ li {
     font-size: 20px;
 }
 
+#cartItemCount {
+    display: inline; 
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
 .GeneralButton {
     margin-top: 20px;
     padding: 5px 12px;
@@ -187,4 +193,11 @@ ul.Breadcrumbs li a:hover {
 .removeText {
     text-decoration: underline;
     color: #28A9DF;
+}
+
+.pageFooter {
+    margin-top: 100px;
+    border-top: 1px solid black;
+    background: #E7FAFE; 
+    padding: 40px 100px; 
 }

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bun Bun Bakeshop</title>
+    <script type="text/javascript" src="main.js"></script>
     <link rel="stylesheet" href="product-detail.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +16,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <!--Overlay for Product Details-->
-<body>
+<body onload="pageLoad()">
     <div id="overlay">
         <div id="ProductDetailBox">
             <a href="product-browsing.html"><img id="ExitLogo" src="Images/Exit.png" alt="exit button image"></a>
@@ -58,7 +59,7 @@
             <li><a class="NavFont" href="product-browsing.html">Browse Flavors</a></li>
             <li><a class="NavFont" href="">Catering</a></li>
             <li><a class="NavFont" href="">Same-day Pick-up</a></li>
-            <li><a class="NavFont" href="">CART  </a><span><img src="Images/shopping_cart.png" alt="shopping cart logo"></span></li>
+            <li><a class="NavFont" href="shopping_cart.html">CART</a><span><p id="cartItemCount" onclick="increaseCartItemCount()">0</p></span><span><img src="Images/shopping_cart.png" alt="shopping cart logo"></span></li>
         </ul>
     </header>
     <!--Bread Crumbs-->
