@@ -8,6 +8,7 @@
 <script type="text/javascript" src="main.js"></script>
 <link rel="stylesheet" href="shopping_cart.css">
 </head>
+<body onload="pageLoad()>
 <!--Page Header-->
     <header class="PageHeader">
         <img class="HeaderLogo" src="Images/bun_bun_logo.png" alt="A circular logo saying Bun Bun Bake Shop with a little brown bun with a heart in the middle.">
@@ -20,7 +21,7 @@
         <li><a class="NavFont" href="product-browsing.html">Browse Flavors</a></li>
         <li><a class="NavFont" href="">Catering</a></li>
         <li><a class="NavFont" href="">Same-day Pick-up</a></li>
-        <li><a class="NavFont" href="shopping_cart.html">CART</a><span><p id="countValue" onclick="upCounter()">0</p></span><span><img src="Images/shopping_cart.png" alt="shopping cart logo"></span></li>
+        <li><a class="NavFont" href="shopping_cart.html">CART</a><span><p id="cartItemCount" onclick="upCounter()">0</p></span><span><img src="Images/shopping_cart.png" alt="shopping cart logo"></span></li>
     </ul>
 </header>
 <!--Bread Crumbs-->
