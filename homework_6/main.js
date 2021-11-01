@@ -24,7 +24,7 @@ addEvent(glazeType, 'change', function() {
 // Updating the page with the new cart information, the function called when the body of the page loads
 //Gets the value of the cart count
 function pageLoad() {
-	if (!localStorage.getItem("cartIconCount")) { //check if this does not exist
+	if (!localStorage.getItem("cartIconCount")) { //check if this does not exist in local storage
 		localStorage.setItem("cartIconCount", "0");
 	}
 	document.getElementById("cartItemCount").innerHTML=localStorage.getItem("cartIconCount");
