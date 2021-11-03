@@ -8,7 +8,7 @@
 <script type="text/javascript" src="main.js"></script>
 <link rel="stylesheet" href="shopping_cart.css">
 </head>
-<body onload="pageLoad()">
+<body onload="completeCartPageLoad()">
 
 <!--Image citations: 
 Photos via Unsplash and Flickr
@@ -63,7 +63,7 @@ Creating a Brand - https://unsplash.com/photos/JSOgX6eaYy4-->
     </div>
     <div class="moneyRemoveCart">
         <p><b>$24.00</b></p>
-        <p class="removeText">Remove</p>
+        <p class="removeText" onclick="removeCartItem()">Remove</p>
     </div>
 </div>
 <!--Cart Item 2-->
