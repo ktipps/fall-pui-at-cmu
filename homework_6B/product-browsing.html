@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bun Bun Bakeshop</title>
+    <script type="text/javascript" src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<!--Image citations: 
+Photos via Unsplash and Flickr
+Michael Fallon - https://unsplash.com/photos/DnGGIffnjTY
+Dilyara Garifullina - https://unsplash.com/photos/WmpGRa898oU
+Yosep Sugiarto - https://unsplash.com/photos/1PEqqv4i2iM
+Gayatri Malhotra - https://unsplash.com/photos/MfuXRXCEy4k
+Bour3 - https://www.flickr.com/photos/bour3/8157517971/
+Creating a Brand - https://unsplash.com/photos/JSOgX6eaYy4-->
+
+<body onload="pageLoad()">
+<!--Page Header-->
+<header class="PageHeader">
+    <img class="HeaderLogo" src="Images/bun_bun_logo.png" alt="A circular logo saying Bun Bun Bake Shop with a little brown bun with a heart in the middle.">
+    <!--Navigation Menu-->
+        <!-- Citation: https://www.w3schools.com/css/css_navbar_horizontal.asp-->
+    <ul id="TopBarNavigation">
+        <li><a class="NavFont" href="index.html">Home</a></li>
+        <li><a class="NavFont" href="about-us.html">About Us</a></li>
+        <li><a class="NavFont" href="product-browsing.html">Browse Flavors</a></li>
+        <li><a class="NavFont" href="">Catering</a></li>
+        <li><a class="NavFont" href="">Same-day Pick-up</a></li>
+        <li><a class="NavFont" href="shopping_cart.html">CART</a><span><p id="cartItemCount" onclick="increaseCartItemCount()">0</p></span><span><img src="Images/shopping_cart.png" alt="shopping cart logo"></span></li>
+    </ul>
+</header>
+<!--Bread Crumbs-->
+<!--Citation: https://www.w3schools.com/howto/howto_css_breadcrumbs.asp-->
+<ul class="Breadcrumbs">
+    <li id="HomeBreadcrumb"><a href="index.html">Home</a></li>
+    <li id="SlashCrumb"><a href="_blank">  /  </a></li>
+    <li id="OnBrowseFlavors"><a href="product-browsing.html">Browse Flavors</a></li>
+</ul>
+
+<h1 class="FlavorsHeader">Flavors</h1>
+
+<!--Product Boxes-->
+<a href="product-detail-copy.html">
+    <div id="ProductBox1">
+         <img src="Images/Pumpkin_Spice.png" class="ProductPhoto" alt="a glazed cinnamon bun with pumpkin pieces">
+    </div>
+</a>
+<div id="PumpkinSpiceTextContainer">
+    <p><span style="color:red;"><b>(New)</b></span> Pumpkin Spice</p>
+</div>
+
+
+<div id="ProductBox2">
+    <img src="Images/Original.png" class="ProductPhoto" alt="a classic white glazed cinnamon bun">
+</div>
+<div id="OriginalContainer">
+    <p> Original</p>
+</div>
+
+<div id="ProductBox3">
+    <img src="Images/Gluten_Free_Original.png" id="GFProductPhoto" alt="a classic white glazed cinnamon bun with GF logo to represent GF free">
+</div>
+<div id="GlutenFreeContainer">
+    <p> Gluten-Free Original</p>
+</div>
+
+<div id="ProductBox4">
+    <img src="Images/Carmel_Pecan.png" class="ProductPhoto" alt="a brown glazed cinnamon bun with pecans on top">
+</div>
+<div id="CarmelPecanContainer">
+    <p>Carmel Pecan</p>
+</div>
+
+<div id="ProductBox5">
+    <img src="Images/Walnut.png" class="ProductPhoto" alt="a white glazed cinnamon bun">
+</div>
+<div id="WalnutContainer">
+    <p>Walnut</p>
+</div>
+   
+<div id="ProductBox6">
+    <img src="Images/Blackberry.png" class="ProductPhoto" alt="a clear glazed cinnamon bun with red filling">
+</div>
+<div id="BlackberryContainer">
+    <p>Blackberry</p>
+</div>
+
+<!--Footer-->
+<footer id="ProductBrowsingPageFooter"></footer> 
+</body>
+</html>
+
