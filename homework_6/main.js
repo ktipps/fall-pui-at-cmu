@@ -43,7 +43,7 @@ function capturingUserSelections() { //onclick on product-browsing page performs
   else { //But if it exists, then 
     localStorage.getItem("cartItemsList"); ////You have to pull out the local storage item to add the new cart item to it -- localStorage.getItem("array name"); 
     JSON.parse(localStorage.getItem("cartItemsList"));//Make it workable with types because local storage only works with strings, but arrays aren't string types always,   JSON.parse(localStorage.getItem("array name")); 
-    let newCartItem = {"glazeInput": document.getElementById("glazeType").value, "bunCountInput": document.getElementById("rollQuantity").value)}; //CHECK are the colons the right syntax?//Establish a varitable to hold all of your subvariables of bun count and values;  let newCart = {"glazeInput", document.getElementById("glazeType").value, do it the same for the next input};
+    let newCartItem = {"glazeInput": document.getElementById("glazeType").value, "bunCountInput": document.getElementById("rollQuantity").value}; //CHECK are the colons the right syntax?//Establish a varitable to hold all of your subvariables of bun count and values;  let newCart = {"glazeInput", document.getElementById("glazeType").value, do it the same for the next input};
     cartItemsArray.push(newCartItem); //Append that new varitable to the array (which is the big bucket of all the cart items);
     localStorage.setItem("cartItemsList", JSON.stringify(cartItemsArray)); //localStorage.setItem("array name", JSON.stringify(literal array variable name here));
   }
@@ -52,11 +52,13 @@ function capturingUserSelections() { //onclick on product-browsing page performs
 //FUNCTION DESCRIPTION: This function is performed when shopping_cart.html loads, and it renders the cart items
 //Pro tip: practice in html and then copy that format into the stuff on line 59, and that way your ids targetted in your CSS will correlate to input)
 function cartItemPageLoad() { // There would have to be onload function triggered when the page loads 
-  localStorage.getItem("cartItemsList"); //getting the key with the array from local storage; localStorage.getItem("array name"); 
-  JSON.parse(localStorage.getItem("cartItemsList")); //make that array workable and restored to original type using JSON as the translator;JSON.parse(localStorage.getItem("array name key"); 
-  for (let x of cartItemsArray) { //CHECK // Loop through the length of the array (syntax? -> arrayname.length?) and display each array item (i.e. the cart item), maybe for / of loops -> might be a good approach 
-    let itemDisplay = document.getElementById("parentCartItemDiv"); //Intializing a varitable to store the parent div to hold all cart items that I'm targeting in my HTML; Displaying each item -> let itemDisplay = document.getElementById("parent div element");
-    itemDisplay.insertAdjacentHTML("beforeend", `<div <p id="test"> ${currentcartitem.glazeInput} </div>`); //CHECK // itemDisplay.insertAdjacentHTML("beforeend", `<div> <p id="test">${currentcartitem.Keyforthatarrayitemthatwepreviouslyestablished}<p> <p>${currentcartitem.glazeInput}</p> <p>${currentcartitem.bunCountInput</p>} //have all of the stuff that you want to appear in that div in here; puts all the id and classes in here that you target with CSS </div>`);
+  //localStorage.getItem("cartItemsList"); //getting the key with the array from local storage; localStorage.getItem("array name"); 
+  let cartItemsArray = JSON.parse(localStorage.getItem("cartItemsList"));
+  console.log(cartItemsArray); //make that array workable and restored to original type using JSON as the translator;JSON.parse(localStorage.getItem("array name key"); 
+  for (let currentcartitem of cartItemsArray) { //CHECK // Loop through the length of the array (syntax? -> arrayname.length?) and display each array item (i.e. the cart item), maybe for / of loops -> might be a good approach 
+    let itemDisplay = document.getElementById("parentCartItemDiv");
+    console.log(itemDisplay); //Intializing a varitable to store the parent div to hold all cart items that I'm targeting in my HTML; Displaying each item -> let itemDisplay = document.getElementById("parent div element");
+    itemDisplay.insertAdjacentHTML("beforeend", `<div <p id="test">test</p> ${currentcartitem.glazeInput} </div>`); //CHECK // itemDisplay.insertAdjacentHTML("beforeend", `<div> <p id="test">${currentcartitem.Keyforthatarrayitemthatwepreviouslyestablished}<p> <p>${currentcartitem.glazeInput}</p> <p>${currentcartitem.bunCountInput</p>} //have all of the stuff that you want to appear in that div in here; puts all the id and classes in here that you target with CSS </div>`);
   }
 }
 
