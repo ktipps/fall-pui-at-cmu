@@ -142,7 +142,7 @@ ul.Breadcrumbs li a:hover {
     align-items: start;
 }
 
-.cartItemBackground { 
+#cartItemBackground { 
     display: flex; 
     flex-direction: row; 
     background-color: #F6F3F3;

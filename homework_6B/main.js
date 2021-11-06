@@ -58,20 +58,38 @@ function cartItemPageLoad() { // There would have to be onload function triggere
   for (let currentcartitem of cartItemsArray) { //CHECK // Loop through the length of the array (syntax? -> arrayname.length?) and display each array item (i.e. the cart item), maybe for / of loops -> might be a good approach 
     let itemDisplay = document.getElementById("parentCartItemDiv");
     console.log(itemDisplay); //Intializing a varitable to store the parent div to hold all cart items that I'm targeting in my HTML; Displaying each item -> let itemDisplay = document.getElementById("parent div element");
-    itemDisplay.insertAdjacentHTML("beforeend", `<div <p id="test">test</p> ${currentcartitem.glazeInput} </div>`); //CHECK // itemDisplay.insertAdjacentHTML("beforeend", `<div> <p id="test">${currentcartitem.Keyforthatarrayitemthatwepreviouslyestablished}<p> <p>${currentcartitem.glazeInput}</p> <p>${currentcartitem.bunCountInput</p>} //have all of the stuff that you want to appear in that div in here; puts all the id and classes in here that you target with CSS </div>`);
+    itemDisplay.insertAdjacentHTML("beforeend", `<div id="cartItemBackground">
+    <div class="cartImageSide">
+        <img class="cartImage" src="Images/pumpkin_with_border.png" alt="a pumpkin spice bun with an orange glaze">
+    </div>
+    <div class="itemDetailsSideCart">
+        <p><b>Pumpkin Spice Bun</b></p>
+        <p>${currentcartitem.glazeInput}</p>
+        <div class="itemCounter">
+            <div class="quantityButton">+</div>
+            <div class="itemCount">${currentcartitem.bunCountInput}</div>
+            <div class="quantityButton">-</div>
+        </div>
+    </div>
+    <div class="moneyRemoveCart">
+        <p><b>$2.00</b></p>
+        <p class="removeText" onclick="removeCartItem()">Remove</p>
+    </div>
+</div>`); // itemDisplay.insertAdjacentHTML("beforeend", `<div> <p id="test">${currentcartitem.Keyforthatarrayitemthatwepreviouslyestablished}<p> <p>${currentcartitem.glazeInput}</p> <p>${currentcartitem.bunCountInput</p>} //have all of the stuff that you want to appear in that div in here; puts all the id and classes in here that you target with CSS </div>`);
   }
 }
 
 //FUNCTION DESCRIPTION: The purpose of this function is to remove unwanted items from the shopping cart. 
 //It's an on click function (correlating to the remove p tag in the HTML on shopping_cart.html) deletes the actual div on the page (document.getElementById('').remove();)
 function removeCartItem() {
-document.getElementById("").remove(); //actually deleting the cart item content from the page by deleting its div; the ID for this div would be the same as the index value in the array
-localStorage.getItem("cartItemsList"); //pulling down the local storage item 
-JSON.parse(localStorage.getItem("cartItemsList")); // Parse the local storage key to make it workable
-cartItemsArray.splice //CHECK//Remove the index value of the array item that you no longer want;   -array.splice that index in that array (removing the value)
-JSON.stringify("cartItemsArrray") //CHECK this is the right varitable to be targetting  //stringify it 
-localStorage.setItem("cartItemsArray", JSON.stringify([])); //CHECK //Pull it back up to local storage
-
+  let elem = document.getElementById("cartItemBackground"); 
+  elem.remove();
+  //document.getElementsByClassName("cartItemBackground").remove(); //actually deleting the cart item content from the page by deleting its div; the ID for this div would be the same as the index value in the array
+  //localStorage.getItem("cartItemsList"); //pulling down the local storage item 
+  //JSON.parse(localStorage.getItem("cartItemsList")); // Parse the local storage key to make it workable
+  //cartItemsList.splice(0,0); //CHECK//Remove the index value of the array item that you no longer want;   -array.splice that index in that array (removing the value)
+  //JSON.stringify("cartItemsList"); //CHECK this is the right varitable to be targetting  //stringify it 
+  //localStorage.setItem("cartItemsList", JSON.stringify([])); //CHECK //Pull it back up to local storage
 }
 
 //GENERAL NOTES//
