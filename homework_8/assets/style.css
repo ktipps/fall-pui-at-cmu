@@ -1,1 +1,74 @@
+/* Basic Asset Styles */
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 64pt;
+    font-weight:bolder;
+    color: #B54600;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 64pt; 
+    font-weight: 500; 
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40pt; 
+    font-weight: 400; 
+}
+
+h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36pt; 
+    font-weight: 300; 
+}
+
+h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28pt; 
+    font-weight: 300;  
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16pt; 
+    font-weight: normal;
+}
+
+.regularCaption {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20pt; 
+    font-weight: lighter;
+}
+
+.homePageCaptions {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20pt; 
+    font-weight: bold;
+}
+
+.navBarLinks {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20pt; 
+    font-weight: normal;
+}
+
+/* Homepage Styles */
+
+.userResearcherH1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 64pt;
+    font-weight:bolder;
+    color: #B54600;
+    text-align: center;
+}
+
+.userResearcherH2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36pt; 
+    font-weight: 300; 
+    margin-top: -40px;
+    text-align: center;
+}
 
