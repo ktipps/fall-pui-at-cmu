@@ -54,8 +54,16 @@ p {
     font-weight: normal;
 }
 
-/* Homepage Styles */
+.karaDorLogo{
+    width: 25%;
+    margin-left: 1%;
+    margin-top: 1%;
+}
 
+/* Homepage Styles */
+#aboveFoldHomeContent {
+    margin-top: 200px;
+}
 .userResearcherH1 {
     font-family: 'Playfair Display', serif;
     font-size: 64pt;
@@ -68,7 +76,37 @@ p {
     font-family: 'Open Sans', sans-serif;
     font-size: 36pt; 
     font-weight: 300; 
-    margin-top: -40px;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+#myWorkArrowContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+
+#myWork {
     text-align: center;
 }
 
+.GalleryImage {
+    position: relative;
+    display: inline;
+    margin-top: 4%; 
+    
+}
+
+
+.blocker {
+  z-index: 2;
+  display: inline-block;
+  max-width: 96%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  font-size: 20px;
+  text-align: center;
+
+}
