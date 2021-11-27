@@ -6,13 +6,13 @@ h1 {
     color: #B54600;
 }
 
-h2 {
+h2  {
     font-family: 'Open Sans', sans-serif;
     font-size: 64pt; 
     font-weight: 500; 
 }
 
-h3 {
+h3, .formText {
     font-family: 'Open Sans', sans-serif;
     font-size: 40pt; 
     font-weight: 400; 
@@ -109,4 +109,13 @@ p {
   font-size: 20px;
   text-align: center;
 
+}
+
+/* Contact Me Page */
+
+.overrideBSH2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 64pt; 
+    font-weight: 500; 
+    margin-bottom: 40pt;
 }
