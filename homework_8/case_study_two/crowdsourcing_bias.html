@@ -1,13 +1,120 @@
-
-<!--Footer-->
-<footer class="container-fluid text-center">
-    <a href="https://dribbble.com/Ktipps">
-        <img class="footerLogo"src="/homework_8/assets/images/dribble.png" alt="dribble basketball logo">
-    </a>
-    <a href="https://www.linkedin.com/in/kara-dor/">
-        <img class="footerLogo" src="/homework_8/assets/images/linkedin.png" alt="LinkedIn logo">
-    </a>
-    <a href="https://www.behance.net/karatippins1">
-        <img class="footerLogo" src="/homework_8/assets/images/behance.png" alt="Behance logo">
-    </a>
-</footer>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kara Dor's Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/homework_8/assets/style.css">
+</head>
+<body>
+   
+    <!--Navbar Made with Bootstrap-->
+    <nav class="navbar">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active" ><a class="colorNavLink" href="/homework_8/home/index.html">My Work</a></li>
+              <li><a class="colorNavLink" href="/homework_8/about_me/about_me.html">About Me</a></li>
+              <li><a class="colorNavLink" href="https://drive.google.com/file/d/1qPiHyrOU8ufyThGc5ATZ_YzN1z9zh6xy/view?usp=sharing">Resume</a></li>
+              <li><a class="colorNavLink" href="/homework_8/contact_me/contact_me.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--Homepage image-->
+    <div class="container">
+        <div class="row"> 
+            <div class="col-sm-6">
+                <h2 class="caseStudyHeading">Using Crowdsourcing to Reduce Algorithmic Bias</h2>
+                <br>
+                <h4 class="caseStudyIconText"> <span><img src="/homework_8/assets/images/outline_person_black_24dp.png"></span>
+                    </span>Qualitative Research Lead</h4>
+                <h4 class="caseStudyIconText"> <span><img src="/homework_8/assets/images/outline_date_range_black_24dp.png"></span>
+                </span>Aug. - Dec. 2021 </h4>
+            </div>
+            <div class="col-sm-6">
+                <img style="max-width: 100%" src="/homework_8/assets/images/crowdsourced.jpg" alt="a hand holding a cell phone with Facebook on it">
+            </div>
+        </div>
+        <div class="container">
+            <div class="subsequentRow row">
+                <div class="col-sm-9">
+                    <br>
+                    <h4>The Challenge</h4>
+                    <p>Voice User Interfaces are extremely popular from Amazon Alexa to Google Home, but as studies have shown these technologies often showcase disparities in recognition
+                        depending on a user's background, race, or accent. </p>
+                    </div>
+            </div>
+            <div class="subsequentRow row">
+                <div class="col-sm-9">
+                    <br>
+                    <h4>The Research Goal</h4>
+                    <p>Our team sought to investigate the potential pyschological consequences of repeated failed recognition attempts by a VUI system for white individuals and black individuals in five major American cities.</p>
+                    </div>
+            </div>
+            <div class="subsequentRow row">
+                <h4>Methodology</h4>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <img style="max-width: 100%" src="/homework_8/assets/images/indie_study_prompt.png" alt="a prompt with a series of questions for the user performing the test">
+                </div>
+                <div class="col-sm-6">
+                    <p>Over the course of five months, our research team conducted nearly <strong>40 user experiment sessions</strong> using a Wizard of Oz methodogy combined with a post-experiment survey to measure the pyschological impact on users' when a VUI system failed to recognize their voice. </p>
+                </div>
+            </div>
+            <div class="subsequentRow row">
+                <div class="col-sm-6">
+                    <h4>Learning to Wizard of Oz</h4>
+                    <p>Working the behind-the-scenes mechanisms was a big lesson for me! We leveraged a combination of Keynote and an audio playout software named Play.HT to create the effect that someone was 
+                        speaking to a real VUI. As a research assitant, I was responsible for making sure that the timing of the playout matched the screen that the user saw, which could be difficult as you're managing participants.
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <img style="max-width: 100%"src="/homework_8/assets/images/playht.png" alt="the Play.ht interface with controls to play pre-written text">
+                </div>
+            </div>
+            <div class="subsequentRow row">
+                <div class="col-sm-9">
+                    <h4>Dealing with Scams in Recruitment</h4>
+                    <p>One challenge our team faced in recruitment was scammers, who motivated by the financial incentive mentioned in our Craiglist posting, would lie about their race or location. 
+                        We had a couple of people attend the study, and were clearly not who they identified themselves to be on the screener. 
+                        In response, we revised our screener to be more specific and altered our protocol to conclude the interview when the researcher recognized someone lied.
+                    </p>
+                </div>
+            </div>
+            <div class="subsequentRow row">
+                <div class="col-sm-9">
+                    <h4>Next Steps</h4>
+                    <p> This study allowed me to led recruitment for the city of Houston, and experience live testing with a Wizard of Oz protocol.
+                        The results of our study should be released in the coming months.
+                    </p>
+                </div>
+            </div>
+        
+    </div>
+        <!--Bootstrap grid for photos-->
+       
+    <footer class="container-fluid text-center">
+        <p class="footerText"> © Kara Dor, 2021</p>
+    </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
