@@ -87,6 +87,17 @@ p {
 }
 /* Homepage Styles */
 
+.centered_Gallery_Text {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14pt; 
+    Color: White; 
+    font-weight: 600;
+}
+
 .container-fluid {
     margin-top: 2%;
 }
@@ -131,23 +142,25 @@ p {
     text-align: center;
 }
 
-.GalleryImage {
+.galleryImageBox {
     position: relative;
     display: inline;
     margin-top: 4%; 
-    
+    opacity: 1.0;
+    z-index: 10;
+    text-align: center;
 }
 
+.galleryImageBox:hover {
+    opacity: 0.8;
+}
+#crowdsourceGalleryImage {
+    max-width: 50%;
+}
 
-.blocker {
-  z-index: 2;
-  display: inline-block;
-  max-width: 96%;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  font-size: 20px;
-  text-align: center;
-
+#galleryImageLibrary {
+    max-width: 100%;
+    margin-top: -2%;
 }
 
 /* Contact Me Page */
