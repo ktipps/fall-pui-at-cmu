@@ -16,17 +16,19 @@ h3, .formText {
     font-family: 'Open Sans', sans-serif;
     font-size: 40pt; 
     font-weight: 400; 
+    margin-bottom: 15pt;
 }
 
 h4 {
     font-family: 'Open Sans', sans-serif;
     font-size: 28pt; 
-    font-weight: 300; 
+    font-weight: 400; 
+    margin-bottom: 15pt;
 }
 
 h5 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 28pt; 
+    font-size: 22pt; 
     font-weight: 300;  
 }
 
@@ -85,6 +87,50 @@ p {
     font-size: 14px;
     margin-top: 5%;
 }
+
+/*Media Queries*/ 
+/*Small devices (landscape phones and up)*/
+@media screen and (min-width: 567px) {
+    h4 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 24pt; 
+        font-weight: 400; 
+    }
+    div.centered_Gallery_Text{
+        margin-top: 80pt;
+        font-size: 20pt;
+    }
+}
+/*Medium devices (tablets, etc.)*/
+@media screen and (min-width: 768px) {
+    h4 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 25pt; 
+        font-weight: 400; 
+    }
+    div.centered_Gallery_Text{
+        margin-top: 10pt;
+        font-size: 16pt;
+    }
+}
+
+/*Large devices(desktops)*/
+@media screen and (min-width: 992px) {
+    h4 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 28pt; 
+        font-weight: 400; 
+    }
+    div.centered_Gallery_Text{
+        margin-top: 10pt;
+        font-size: 20pt;
+    }
+}
+
+/*Extra large desktops */
+@media screen and (min-width: 1200px) {
+    
+}
 /* Homepage Styles */
 
 .centered_Gallery_Text {
@@ -93,7 +139,7 @@ p {
     left: 50%; 
     transform: translate(-50%, -50%);
     font-family: 'Open Sans', sans-serif;
-    font-size: 14pt; 
+    font-size: 2vw; 
     Color: White; 
     font-weight: 600;
 }
@@ -211,3 +257,16 @@ p {
     margin-top: 2%; 
 }
 
+
+/*Case Study 4 - Local Libraries*/
+#orderedListLibraries {
+    margin-top: 20pt;
+    font-size: 16pt;
+    font-family: 'Open Sans', sans-serif;
+}
+
+li {
+    font-size: 16pt;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 10pt;
+}
